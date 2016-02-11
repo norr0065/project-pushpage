@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+@import url(https://fonts.googleapis.com/css?family=Great+Vibes);
 @-moz-viewport {
   width: device-width;
   scale: 1;
@@ -40,47 +42,52 @@ body.noscript .toggle-btn {
   display: none;
 }
 
-.logo {
-  position: absolute;
-  padding-top: 1em;
-  top: 1em;
-  left: 2em;
-}
-
 header {
   padding: 0 1em;
   position: relative;
 }
 
-header .toggle-btn {
+.logo {
+  margin: 2em;
+  height: 100px;
+  width: 100px;
+}
+
+.toggle-btn {
+  margin: 1em;
   position: absolute;
   right: 1em;
   top: 0;
 }
 
-.navigation ul {
-  padding: 0;
+.close-btn {
+  margin: 1em;
+  position: absolute;
+  left: 1em;
+  top: 0;
 }
 
-.navigation ul li {
+.navigation ul {
+  padding: 3em;
+}
+
+.navigation li {
   list-style-type: none;
 }
 
-.navigation ul li a {
+.navigation li a {
   display: block;
-  padding: .5em 1em;
   text-align: center;
-  border-bottom: 1px solid #ccc;
+  padding: .5em 1em;
   text-decoration: none;
-}
-
-.navigation ul li:first-child a {
-  border-top: 1px solid #ccc;
+  color: #f15b5b;
+  font-family: 'Great Vibes', serif;
+  font-size: 20px;
 }
 
 .toggle-btn,
 .close-btn {
-  color: #222;
+  color: #f15b5b;
   text-decoration: none;
   height: 40px;
   width: 40px;
@@ -88,11 +95,10 @@ header .toggle-btn {
 
 .toggle-btn:before,
 .close-btn:before {
-  border: 1px solid #ccc;
-  padding: 13px 11px;
   height: 40px;
   width: 40px;
   display: inline-block;
+  padding: 13px 11px;
 }
 
 .toggle-btn span,
@@ -123,25 +129,24 @@ header .toggle-btn {
     height: 100%;
     position: relative;
     -webkit-transform: translateX(0);
-        -ms-transform: translateX(0);
-            transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
     transition: all 300ms ease-in-out;
   }
-  .site-wrapper[data-state='slide-open'] .sliding-canvas {
+  .site-wrapper[data-state="slide-open"] .sliding-canvas {
     -webkit-transform: translateX(-100%);
-        -ms-transform: translateX(-100%);
-            transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    transform: translateX(-100%);
   }
-  .site-wrapper[data-state='slide-open'] {
+  .site-wrapper[data-state="slide-open"] {
     overflow: visible;
   }
-  .slide-menu {
+  .navigation {
     position: absolute;
     width: 100%;
     right: -100%;
     top: 0;
     bottom: 0;
-    height: 100%;
     padding: 0;
     min-height: 800px;
   }
@@ -154,7 +159,7 @@ header .toggle-btn {
   }
 }
 
-body.noscript .slide-menu {
+body.noscript .navigation {
   position: static;
   right: auto;
 }
