@@ -40,6 +40,13 @@ body.noscript .toggle-btn {
   display: none;
 }
 
+.logo {
+  position: absolute;
+  padding-top: 1em;
+  top: 1em;
+  left: 2em;
+}
+
 header {
   padding: 0 1em;
   position: relative;
