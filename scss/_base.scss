@@ -1,6 +1,17 @@
 // Variables
 
-$light-grey: #ccc;
+$coral: #f15b5b;
+
+$light-grey: #E6E6E6;
 $dark-grey: #222;
+$white: #fff;
 
 $text-color: $dark-grey;
+
+// font families
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+$montserrat: 'Montserrat', sans-serif;
+
+
+@import url(https://fonts.googleapis.com/css?family=Great+Vibes);
+$great-vibes: 'Great Vibes', serif;
